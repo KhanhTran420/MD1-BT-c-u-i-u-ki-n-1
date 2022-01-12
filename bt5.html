@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 5</title>
+</head>
+<body>
+    <table>
+
+        <tr>
+            <td><input id="kiemtra" type="text"></td>
+            <td><input id="giuaki" type="text"></td>
+            <td><input id="cuoiki" type="text"></td>
+            <td><button onclick="tong()">Tính điểm TB</button></td>
+        </tr>
+        <tr>
+            <td>Điểm kiểm tra</td>
+            <td>Điểm giữa kì</td>
+            <td>Điểm cuối kì</td>
+        </tr>
+
+    </table>
+
+
+      <script>
+          function tong(){
+          let a = Number(document.getElementById("kiemtra").value)
+          let b = Number(document.getElementById("giuaki").value)*2
+          let c = Number(document.getElementById("cuoiki").value)*3
+          let total = Math.floor((a+b+c)/6)
+             if(total>=8 && total<=10){
+                 alert("học sinh giỏi")
+             }
+             else if(total<8 && total>=6){
+                 alert("học sinh khá")
+             }
+             else if(total<6 && total>=4){
+                 alert("học sinh trung bình")
+
+             }
+             else{
+                 alert("trượt");
+             }
+
+          }
+      </script>
+</body>
+</html>
