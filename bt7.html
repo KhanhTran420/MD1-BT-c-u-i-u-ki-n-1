@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại cho 1 hộ gia đình</title>
+</head>
+<body>
+ <script>
+     let SoDien = +prompt("Nhập số điện: ")
+     let CuocPhi=0;
+     if(SoDien>50){
+         CuocPhi+=SoDien*5;
+     }
+     else if (SoDien>100){
+         CuocPhi+=SoDien*7;
+     }else {
+         CuocPhi+=SoDien*3
+     }
+     alert("Cước Phí = " + CuocPhi + ".000 Nghìn VND")
+ </script>
+</body>
+</html>
